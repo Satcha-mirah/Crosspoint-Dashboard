@@ -1,0 +1,229 @@
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+}
+.side-bar {
+    width: 230px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    z-index: 10;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.logo-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.logo-header {
+    margin-top: 4px;
+    font-size: 20px;
+    color: #0000f5;
+    font-weight: 700;
+}
+.nav{
+    position: relative;
+    right: 32px;
+}
+.nav li {
+    margin-top: 40px;
+    font-size: 20px;
+    color: var(--text-black-900);
+    list-style: none;
+}
+i {
+    color: #0000f5;
+    margin-right: 12px;
+    position: relative;
+    top: 5px;
+}
+.top-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-div {
+    position: relative;
+    padding-left: 300px;
+}
+
+.search-div input[type="text"] {
+    margin-top: 30px;
+    padding-right: 10px;
+    width: 320px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #E5E5E5;
+    border: 2px solid #E5E5E5;
+    box-shadow: 0 0 20px rgba(50, 46, 77, 0.15);
+}
+.search-input{
+    height: 200px;
+    width: 200px;
+}
+
+.search-input::placeholder {
+    padding-left: 10%;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.search-div i {
+    position: absolute;
+    top: 65%;
+    right: 243px;
+    transform: translateY(-50%);
+}
+
+.search-icon{
+    color: rgb(158, 155, 155);
+    padding-right: 50px;
+    position: relative;
+    top: 30px;
+}
+.top-nav-icons{
+    color: var(--text-black-900);
+    display:flex;
+   margin-left: 15px;
+    margin-top: 10px;
+  
+}
+.incognito{
+    border: 1px solid #E5E5E5;
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    margin-left: 350px;
+}
+.notification{
+    border: 1px solid #E5E5E5;
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #E5E5E5; 
+    margin-left: 30px;
+}
+.straight-line{
+    border-right: 3px solid var(--bg-black-50);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.sam-image{
+    margin-top: 25px;
+    margin-left: 120px;
+}
+.down-icon{
+    margin-top: 35px;
+    margin-left: 20px;
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.large-box{
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-end; */
+    margin-top: 70px;
+    height: 360px;
+    width: 72%;
+    border-radius: 5px;
+    background-color: #0000f5;
+    margin-left: 340px;
+}
+.happy-img{
+    height: 10%;
+    width: 10%;
+}
+.texts{
+    margin-left: 400px;
+    margin-top: 40px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+button{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 170px;
+    background-color: #fff;
+    color: #0000f5;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+.next-icon{
+    margin-left: 15px;
+}
+h4{
+    margin-left: 340px;
+    color: var(--text-black-900);
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin-left: 340px;
+}
+.bottom-buttons{
+    border: 2px solid #E5E5E5;
+    font-size: 18px;
+    height: 60px;
+    width: 300px;
+    background-color: #fff;
+    color: var(--text-black-900);
+}
+.btn-icon{
+margin-top: 50px;
+color: var(--text-black-900);
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 768px) {
+    .side-bar {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .search-div {
+      padding-left: 0;
+    }
+  
+    .search-div input[type="text"] {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .large-box {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+  
+    .texts {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .bottom-buttons {
+      width: 100%;
+    }
+  }
